@@ -28,42 +28,42 @@ public struct SkylabUser: Equatable {
     public private(set) var userProperties: [String: String]?
     
     public init(
-            deviceId: String? = nil,
-            userId: String? = nil,
-            version: String? = nil,
-            country: String? = nil,
-            region: String? = nil,
-            dma: String? = nil,
-            city: String? = nil,
-            language: String? = nil,
-            platform: String? = nil,
-            os: String? = nil,
-            deviceFamily: String? = nil,
-            deviceType: String? = nil,
-            deviceManufacturer: String? = nil,
-            deviceModel: String? = nil,
-            carrier: String? = nil,
-            library: String? = nil,
-            userProperties: [String: String]? = nil
-        ) {
-            self.deviceId = deviceId
-            self.userId = userId
-            self.version = version
-            self.country = country
-            self.region = region
-            self.dma = dma
-            self.city = city
-            self.language = language
-            self.platform = platform
-            self.os = os
-            self.deviceFamily = deviceFamily
-            self.deviceType = deviceType
-            self.deviceManufacturer = deviceManufacturer
-            self.deviceModel = deviceModel
-            self.carrier = carrier
-            self.library = library
-            self.userProperties = userProperties
-        }
+        deviceId: String? = nil,
+        userId: String? = nil,
+        version: String? = nil,
+        country: String? = nil,
+        region: String? = nil,
+        dma: String? = nil,
+        city: String? = nil,
+        language: String? = nil,
+        platform: String? = nil,
+        os: String? = nil,
+        deviceFamily: String? = nil,
+        deviceType: String? = nil,
+        deviceManufacturer: String? = nil,
+        deviceModel: String? = nil,
+        carrier: String? = nil,
+        library: String? = nil,
+        userProperties: [String: String]? = nil
+    ) {
+        self.deviceId = deviceId
+        self.userId = userId
+        self.version = version
+        self.country = country
+        self.region = region
+        self.dma = dma
+        self.city = city
+        self.language = language
+        self.platform = platform
+        self.os = os
+        self.deviceFamily = deviceFamily
+        self.deviceType = deviceType
+        self.deviceManufacturer = deviceManufacturer
+        self.deviceModel = deviceModel
+        self.carrier = carrier
+        self.library = library
+        self.userProperties = userProperties
+    }
 
     public class Builder {
 
