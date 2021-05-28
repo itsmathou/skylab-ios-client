@@ -93,7 +93,7 @@ public class DefaultSkylabClient : SkylabClient {
 
     public func fetchAll(completion:  (() -> Void)? = nil) {
         let start = CFAbsoluteTimeGetCurrent()
-        DispatchQueue.global(qos: .background).async {
+        DispatchQueue.global(qos: .userInteractive).async {
             let session = URLSession.shared
             let userContext = self.getUserWithContext()
             let userId = userContext.userId
@@ -153,6 +153,7 @@ public class DefaultSkylabClient : SkylabClient {
                 task.resume()
             } catch {
                 print("[Skylab] Error during JSON serialization: \(error.localizedDescription)")
+                completion?()
             }
         }
     }
