@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		201A78DF2643AB6100663DCB /* SkylabUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201A78DE2643AB6100663DCB /* SkylabUserTests.swift */; };
+		20B1E96B2661A63C00AB96D4 /* DefaultContextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B1E96A2661A63C00AB96D4 /* DefaultContextProvider.swift */; };
 		E9030DB525B8AFC600BA1BA8 /* Variant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9030DB425B8AFC600BA1BA8 /* Variant.swift */; };
 		E914961925796DA800C64B38 /* Skylab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E914960F25796DA800C64B38 /* Skylab.framework */; };
 		E914961E25796DA800C64B38 /* SkylabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E914961D25796DA800C64B38 /* SkylabTests.swift */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		201A78DE2643AB6100663DCB /* SkylabUserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkylabUserTests.swift; sourceTree = "<group>"; };
+		20B1E96A2661A63C00AB96D4 /* DefaultContextProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultContextProvider.swift; sourceTree = "<group>"; };
 		E9030DB425B8AFC600BA1BA8 /* Variant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variant.swift; sourceTree = "<group>"; };
 		E914960F25796DA800C64B38 /* Skylab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Skylab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E914961225796DA800C64B38 /* Skylab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Skylab.h; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				E9C5D9122579718E00867574 /* AmplitudeContextProvider.swift */,
+				20B1E96A2661A63C00AB96D4 /* DefaultContextProvider.swift */,
 				E9C5D91A2579718E00867574 /* ContextProvider.swift */,
 				E9C5D9182579718E00867574 /* InMemoryStorage.swift */,
 				E9C5D9172579718E00867574 /* Skylab.swift */,
@@ -271,6 +274,7 @@
 				E9C5D91D2579718E00867574 /* UserDefaultsStorage.swift in Sources */,
 				E9C5D9222579718E00867574 /* Storage.swift in Sources */,
 				E9C5D9212579718E00867574 /* InMemoryStorage.swift in Sources */,
+				20B1E96B2661A63C00AB96D4 /* DefaultContextProvider.swift in Sources */,
 				E9C5D91B2579718E00867574 /* AmplitudeContextProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
