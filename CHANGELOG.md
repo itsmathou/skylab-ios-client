@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/amplitude/skylab-ios-client/compare/v1.1.0...v1.2.0) (2021-05-28)
+
+
+### Bug Fixes
+
+* ensure completion called; use userinteractive ([7085929](https://github.com/amplitude/skylab-ios-client/commit/70859292e4bf57c224eccaf18802956678bda5ac))
+
+
+### Features
+
+* add default context provider ([#9](https://github.com/amplitude/skylab-ios-client/issues/9)) ([0b9d564](https://github.com/amplitude/skylab-ios-client/commit/0b9d564df3ab3fac834b1856825f11f76a031b7c))
+
 # [1.1.0](https://github.com/amplitude/skylab-ios-client/compare/v1.0.2...v1.1.0) (2021-05-21)
 
 
