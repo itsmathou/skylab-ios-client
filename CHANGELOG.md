@@ -1,3 +1,12 @@
+## [1.2.1](https://github.com/amplitude/skylab-ios-client/compare/v1.2.0...v1.2.1) (2021-05-29)
+
+
+### Bug Fixes
+
+* add public init to skylab user ([35fad96](https://github.com/amplitude/skylab-ios-client/commit/35fad96afdf50bb75e47fa1cb6bd65171af06d6d))
+* fix indentation ([916a6b2](https://github.com/amplitude/skylab-ios-client/commit/916a6b2809d391b42fcca8922c9cd9fb844f310e))
+* fix test target ([5639752](https://github.com/amplitude/skylab-ios-client/commit/5639752bb7eec24652acae368620dfe6f39a9846))
+
 # [1.2.0](https://github.com/amplitude/skylab-ios-client/compare/v1.1.0...v1.2.0) (2021-05-28)
 
 
