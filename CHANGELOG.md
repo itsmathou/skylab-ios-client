@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/amplitude/skylab-ios-client/compare/v1.2.1...v1.2.2) (2021-05-29)
+
+
+### Bug Fixes
+
+* make DefaultContextProvider init public, add userId, deviceId setting ([28c66a8](https://github.com/amplitude/skylab-ios-client/commit/28c66a8c3f64f0c9a77fc6cc130f5486660b6d13))
+
 ## [1.2.1](https://github.com/amplitude/skylab-ios-client/compare/v1.2.0...v1.2.1) (2021-05-29)
 
 
