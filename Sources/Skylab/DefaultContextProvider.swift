@@ -10,13 +10,21 @@ import Foundation
 open class DefaultContextProvider : ContextProvider {
 
     var version: String?
+    
+    public var userId: String? = nil
+    public var deviceId: String? = nil
+    
+    public init(_ userId: String? = nil, _ deviceId: String? = nil) {
+        self.userId = userId
+        self.deviceId = deviceId
+    }
 
     public func getDeviceId() -> String? {
-        return nil
+        return deviceId
     }
 
     public func getUserId() -> String? {
-        return nil
+        return userId
     }
 
     func cacheVersion() -> Void {
