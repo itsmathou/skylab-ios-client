@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/amplitude/skylab-ios-client/compare/v1.2.2...v1.2.3) (2021-06-02)
+
+
+### Bug Fixes
+
+* add public ctor to skylab user builder ([955d933](https://github.com/amplitude/skylab-ios-client/commit/955d93396780e7d5e674490feac1af6f6733257a))
+
 ## [1.2.2](https://github.com/amplitude/skylab-ios-client/compare/v1.2.1...v1.2.2) (2021-05-29)
 
 
