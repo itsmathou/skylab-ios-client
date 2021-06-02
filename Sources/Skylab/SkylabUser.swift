@@ -69,6 +69,10 @@ public struct SkylabUser: Equatable {
 
         private var user = SkylabUser()
 
+        public init() {
+            // public initializer
+        }
+        
         public func setUserId(_ userId: String?) -> Builder {
             self.user.userId = userId
             return self
