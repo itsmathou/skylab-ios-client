@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92CE711C267B25CC00D4DE14 /* Amplitude.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92CE711B267B25CC00D4DE14 /* Amplitude.xcframework */; };
+		92CE711D267B25CC00D4DE14 /* Amplitude.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 92CE711B267B25CC00D4DE14 /* Amplitude.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E9030DB525B8AFC600BA1BA8 /* Variant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9030DB425B8AFC600BA1BA8 /* Variant.swift */; };
 		E914961925796DA800C64B38 /* Skylab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E914960F25796DA800C64B38 /* Skylab.framework */; };
 		E914961E25796DA800C64B38 /* SkylabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E914961D25796DA800C64B38 /* SkylabTests.swift */; };
 		E914962025796DA800C64B38 /* Skylab.h in Headers */ = {isa = PBXBuildFile; fileRef = E914961225796DA800C64B38 /* Skylab.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E9945CE7257987AF0066398B /* Amplitude in Frameworks */ = {isa = PBXBuildFile; productRef = E9945CE6257987AF0066398B /* Amplitude */; settings = {ATTRIBUTES = (Weak, ); }; };
 		E9C5D91B2579718E00867574 /* AmplitudeIdentityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C5D9122579718E00867574 /* AmplitudeIdentityProvider.swift */; };
 		E9C5D91C2579718E00867574 /* SkylabClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C5D9132579718E00867574 /* SkylabClient.swift */; };
 		E9C5D91D2579718E00867574 /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C5D9142579718E00867574 /* UserDefaultsStorage.swift */; };
@@ -33,7 +34,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		92CE711E267B25CC00D4DE14 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				92CE711D267B25CC00D4DE14 /* Amplitude.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		92CE711B267B25CC00D4DE14 /* Amplitude.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Amplitude.xcframework; path = Carthage/Build/Amplitude.xcframework; sourceTree = "<group>"; };
 		E9030DB425B8AFC600BA1BA8 /* Variant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variant.swift; sourceTree = "<group>"; };
 		E914960F25796DA800C64B38 /* Skylab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Skylab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E914961225796DA800C64B38 /* Skylab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Skylab.h; sourceTree = "<group>"; };
@@ -58,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9945CE7257987AF0066398B /* Amplitude in Frameworks */,
+				92CE711C267B25CC00D4DE14 /* Amplitude.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92CE711A267B25CC00D4DE14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92CE711B267B25CC00D4DE14 /* Amplitude.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E914960525796DA800C64B38 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +104,7 @@
 				E9C5D928257971B900867574 /* Sources */,
 				E9C5D929257971BE00867574 /* Tests */,
 				E914961025796DA800C64B38 /* Products */,
+				92CE711A267B25CC00D4DE14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,6 +183,7 @@
 				E914960B25796DA800C64B38 /* Sources */,
 				E914960C25796DA800C64B38 /* Frameworks */,
 				E914960D25796DA800C64B38 /* Resources */,
+				92CE711E267B25CC00D4DE14 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,7 +191,6 @@
 			);
 			name = Skylab;
 			packageProductDependencies = (
-				E9945CE6257987AF0066398B /* Amplitude */,
 			);
 			productName = Skylab;
 			productReference = E914960F25796DA800C64B38 /* Skylab.framework */;
@@ -217,7 +242,6 @@
 			);
 			mainGroup = E914960525796DA800C64B38;
 			packageReferences = (
-				E9945CE5257987AF0066398B /* XCRemoteSwiftPackageReference "Amplitude-iOS" */,
 			);
 			productRefGroup = E914961025796DA800C64B38 /* Products */;
 			projectDirPath = "";
@@ -335,7 +359,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -393,7 +417,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -525,25 +549,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		E9945CE5257987AF0066398B /* XCRemoteSwiftPackageReference "Amplitude-iOS" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/amplitude/Amplitude-iOS.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.2.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		E9945CE6257987AF0066398B /* Amplitude */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E9945CE5257987AF0066398B /* XCRemoteSwiftPackageReference "Amplitude-iOS" */;
-			productName = Amplitude;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E914960625796DA800C64B38 /* Project object */;
 }
